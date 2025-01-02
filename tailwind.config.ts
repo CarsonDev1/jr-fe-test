@@ -11,6 +11,8 @@ const config: Config = {
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
+				primary: '#020c20',
+				second: '#8D8E92',
 			},
 			fontFamily: {
 				oswald: ['Oswald', 'sans-serif'],

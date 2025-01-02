@@ -32,7 +32,7 @@ export default function PlayerProfile() {
 
 	return (
 		<div className='flex flex-col gap-1 lg:flex-row'>
-			<div className='flex flex-col justify-center w-full lg:w-1/2 min-h-[204px] bg-[#020c20]'>
+			<div className='flex flex-col justify-center w-full lg:w-1/2 min-h-[204px] bg-primary'>
 				<div className='relative py-14 px-3'>
 					<button
 						className='absolute right-3 top-2 rounded-full p-1 transition-colors hover:bg-white/10'
@@ -78,7 +78,7 @@ export default function PlayerProfile() {
 			</div>
 
 			<div className='grid grid-cols-1 gap-1 min-h-[204px] sm:grid-cols-2 w-full lg:w-1/2'>
-				<div className='min-h-16 px-4 py-2 border border-gray-900 bg-[#020c20]'>
+				<div className='min-h-16 px-4 py-3 h-full border border-gray-900 bg-primary'>
 					<div className='text-sm text-gray-400'>Nationality</div>
 					<div className='mt-2 flex items-center gap-2'>
 						<div className='relative size-6 overflow-hidden rounded-full'>
@@ -90,7 +90,7 @@ export default function PlayerProfile() {
 					</div>
 				</div>
 
-				<div className='min-h-16 px-4 py-2 border border-gray-900 bg-[#020c20]'>
+				<div className='min-h-16 px-4 py-3 h-full border border-gray-900 bg-primary'>
 					<div className='text-sm text-gray-400'>Date of birth</div>
 					<div className='mt-2 flex items-start gap-2'>
 						<div className='relative size-7 overflow-hidden rounded-full'>
@@ -103,7 +103,7 @@ export default function PlayerProfile() {
 					</div>
 				</div>
 
-				<div className='min-h-16 px-4 py-2 border border-gray-900 bg-[#020c20]'>
+				<div className='min-h-16 px-4 py-3 h-full border border-gray-900 bg-primary'>
 					<div className='text-sm text-gray-400'>Height</div>
 					<div className='mt-2 flex items-center gap-2'>
 						<div className='relative size-7 overflow-hidden rounded-full'>
@@ -113,7 +113,7 @@ export default function PlayerProfile() {
 					</div>
 				</div>
 
-				<div className='min-h-16 px-4 py-2 border border-gray-900 bg-[#020c20]'>
+				<div className='min-h-16 px-4 py-3 h-full border border-gray-900 bg-primary'>
 					<div className='text-sm text-gray-400'>Preferred foot</div>
 					<div className='mt-2 flex items-center gap-2'>
 						<div className='relative size-7 overflow-hidden rounded-full'>
@@ -125,7 +125,7 @@ export default function PlayerProfile() {
 					</div>
 				</div>
 
-				<div className='min-h-16 px-4 py-2 border border-gray-900 bg-[#020c20]'>
+				<div className='min-h-16 px-4 py-3 h-full border border-gray-900 bg-primary'>
 					<div className='text-sm text-gray-400'>Jersey number</div>
 					<div className='mt-2 flex items-center gap-2'>
 						<div className='relative size-7 overflow-hidden rounded-full'>
@@ -135,7 +135,7 @@ export default function PlayerProfile() {
 					</div>
 				</div>
 
-				<div className='px-4 py-2 bg-[#020c20]'>
+				<div className='px-4 py-3 bg-primary'>
 					<div className='text-sm text-gray-400'>Position</div>
 					<div className='mt-2 flex items-center gap-2'>
 						<div className='flex h-6 w-6 items-center justify-center'>

@@ -12,15 +12,31 @@ export default function Header() {
 					<Link href='/' className='flex items-center'>
 						<Image src={Logo} width={140} height={20} alt='logo' className='w-24 md:w-32' />
 					</Link>
-					<div className='flex items-center gap-2'>
-						<div className='flex items-center gap-2 rounded px-3 py-2.5 border-2 border-transparent bg-clip-border'>
-							<div className='rounded-full bg-gradient-to-r from-[#1456FF80] via-[#658BEC80] to-[#092E8D80] p-[2px]'>
-								<div className='flex items-center gap-2 bg-gradient-to-r from-[#1553EF] via-[#0C3089] to-[#0C1A4C] px-3 py-1.5 rounded-full'>
-									<Image src={Ball} width={40} height={40} alt='ball' className='size-5' />
-									<span className='text-sm font-medium text-white'>FOOTBALL</span>
+					<div className='flex items-center gap-1'>
+						<Link href='/mini-game' className='w-fit'>
+							<div className='flex items-center gap-2'>
+								<div className='flex items-center gap-2 rounded border-2 border-transparent bg-clip-border'>
+									<div className='rounded-full bg-gradient-to-r from-[#1456FF80] via-[#658BEC80] to-[#092E8D80] p-[2px]'>
+										<div className='flex items-center gap-2 bg-gradient-to-r from-[#1553EF] via-[#0C3089] to-[#0C1A4C] px-3 py-1.5 rounded-full'>
+											<Image src={Ball} width={40} height={40} alt='ball' className='size-5' />
+											<span className='text-sm font-medium text-white'>FOOTBALL</span>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
+						</Link>
+						<Link href='/mini-game' className='w-fit'>
+							<div className='flex items-center gap-2'>
+								<div className='flex items-center gap-2 rounded border-2 border-transparent bg-clip-border'>
+									<div className='rounded-full bg-gradient-to-r from-[#1456FF80] via-[#658BEC80] to-[#092E8D80] p-[2px]'>
+										<div className='flex items-center gap-2 bg-gradient-to-r from-[#1553EF] via-[#0C3089] to-[#0C1A4C] px-3 py-1.5 rounded-full'>
+											<Image src={Ball} width={40} height={40} alt='ball' className='size-5' />
+											<span className='text-sm font-medium text-white'>PLAY GAME</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</Link>
 					</div>
 				</div>
 

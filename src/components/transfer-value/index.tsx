@@ -17,12 +17,12 @@ const data = [
 
 export default function TransferValue() {
 	return (
-		<div className='space-y-4 bg-[#020c20] p-6 w-1/2'>
-			<h2 className='text-lg font-semibold text-white'>TRANSFER VALUE</h2>
+		<div className='bg-primary p-4 w-full lg:w-1/2'>
+			<h2 className='text-lg font-semibold text-white mb-4'>TRANSFER VALUE</h2>
 
 			<div className='w-full'>
-				<div className='w-1/2 bg-gradient-to-r from-[#09379447] via-[#09379447] to-[#09379447] rounded-lg p-4 '>
-					<div className='mb-8 flex justify-between'>
+				<div className='w-full lg:w-1/2 bg-gradient-to-r from-[#09379447] via-[#09379447] to-[#09379447] rounded-lg p-3'>
+					<div className='mb-8 flex items-center gap-5'>
 						{Array(8)
 							.fill(null)
 							.map((_, i) => (
@@ -34,7 +34,7 @@ export default function TransferValue() {
 							))}
 					</div>
 
-					<div className='relative h-[200px] w-full'>
+					<div className='relative h-[180px] w-full'>
 						<ResponsiveContainer width='100%' height='100%'>
 							<LineChart data={data} margin={{ top: 5, right: 45, left: 10, bottom: 5 }}>
 								<CartesianGrid
@@ -86,7 +86,7 @@ export default function TransferValue() {
 					</div>
 				</div>
 
-				<div className='mt-8 space-y-2'>
+				<div className='flex flex-col gap-2 mt-4'>
 					<div className='flex items-center justify-between text-sm'>
 						<div className='flex items-center gap-3'>
 							<div className='flex gap-1'>
@@ -94,16 +94,16 @@ export default function TransferValue() {
 								<span className='h-1 w-2 bg-[#533c32]'></span>
 								<span className='h-1 w-2 bg-[#533c32]'></span>
 							</div>
-							<span className='text-gray-400'>Current player value</span>
+							<span className='text-second'>Current player value</span>
 						</div>
-						<span className='text-white'>11.6M $</span>
+						<span className='text-second'>11.6M $</span>
 					</div>
 					<div className='flex items-center justify-between text-sm'>
 						<div className='flex items-center gap-3'>
 							<span className='h-1 w-8 bg-blue-500'></span>
-							<span className='text-gray-400'>Transfer fee</span>
+							<span className='text-second'>Transfer fee</span>
 						</div>
-						<span className='text-white'>(Highest) 66M</span>
+						<span className='text-second'>(Highest) 66M</span>
 					</div>
 				</div>
 			</div>

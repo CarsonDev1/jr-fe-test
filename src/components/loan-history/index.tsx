@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FiMinus } from 'react-icons/fi';
+import ClubLoan from '@/public/images/club-loan.png';
 
 interface LoanEntry {
 	team: string;
@@ -15,29 +16,28 @@ const loanHistory: LoanEntry[] = Array(5).fill({
 
 export default function LoanHistory() {
 	return (
-		<div className='space-y-1 rounded-lg bg-[#0a0e1c] p-4 w-1/2'>
+		<div className='space-y-1 rounded-lg bg-primary p-4 w-full lg:w-1/2'>
 			{loanHistory.map((entry, index) => (
-				<div key={index} className='flex items-center justify-between rounded px-4 py-3 hover:bg-white/5'>
+				<div
+					key={index}
+					className={`flex items-center justify-between px-4 py-3 hover:bg-white/5 ${
+						index !== loanHistory.length - 1 ? 'border-b border-[#272a31]' : ''
+					}`}
+				>
 					<div className='flex items-center gap-3'>
 						<div className='relative h-8 w-8'>
-							<Image
-								src='/placeholder.svg?height=32&width=32'
-								alt='Chelsea FC'
-								width={32}
-								height={32}
-								className='rounded-full'
-							/>
+							<Image src={ClubLoan} alt='Chelsea FC' width={32} height={32} className='rounded-full' />
 						</div>
-						<div className='flex flex-col'>
+						<div className='flex flex-col gap-1'>
 							<span className='text-sm font-medium text-white'>{entry.team}</span>
-							<span className='text-xs text-gray-400'>{entry.date}</span>
+							<span className='text-xs text-second'>{entry.date}</span>
 						</div>
 					</div>
-					<div className='flex items-center gap-4'>
-						<span className='text-sm font-medium text-green-500'>{entry.status}</span>
-						<button className='text-gray-400 hover:text-white'>
-							<FiMinus className='h-5 w-5' />
+					<div className='flex flex-col items-end gap-2'>
+						<button className='text-green-500'>
+							<FiMinus className='h-5 w-3' />
 						</button>
+						<span className='text-sm font-medium text-green-500'>{entry.status}</span>
 					</div>
 				</div>
 			))}

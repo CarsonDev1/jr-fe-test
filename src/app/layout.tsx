@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Be_Vietnam_Pro } from 'next/font/google';
 import Header from '@/components/header';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
 
 const beVnPro = Be_Vietnam_Pro({
@@ -20,9 +22,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${beVnPro.className} bg-[#01040d]`}>
+			<body className={`${beVnPro.className} bg-[#16254D]`}>
 				<Header />
 				{children}
+				<ToastContainer />
 			</body>
 		</html>
 	);
